@@ -1,10 +1,14 @@
-
 # Task Management System  
 
 ## 🔥 Inspiration  
 Managing tasks efficiently is crucial in today’s fast-paced world. Often, people struggle with organizing and tracking their daily activities, leading to missed deadlines and decreased productivity. Our Task Management System aims to provide a simple yet effective solution to help users plan, track, and complete their tasks on time.  
 ## 📽 Demo Video
-[Download Demo Video](https://github.com/Jaideepk2004/task-management-system/blob/main/task_management_system_demo.mp4)
+
+
+[demo.webm](https://github.com/user-attachments/assets/9c5dd214-3213-4ffe-8d1b-0a810006d3e9)
+
+Uploading task_management_system_demo.mp4…
+
 
 ## 🚀 What It Does  
 Task Management System is a web-based platform designed to help users:  
