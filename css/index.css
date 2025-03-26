@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to right, #f8f9fa, #e3e7ed);
+}
+
+/* Navbar */
+.navbar {
+    width: 97%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.auth-btn {
+    background: #ffad00ba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px -1px;
+    max-width: 1200px;
+    margin: 4px 0px 1px 58px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    color: #0a0a32;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.explore {
+    background: #6a5acd;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.start {
+    border: 2px solid #f6a700;
+    background: #fbfaf9;
+    color: #ffa500;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+    
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 544px;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background:#ffffffcf;
+    padding: 50px 20px;
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.feature-box {
+width: 190px;
+height: 190px;
+border-radius: 50%;
+box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+transition: transform 0.3s ease-in-out;
+padding: 20px;
+border: 5px solid #ffad00ba;
+opacity: 0; /* Initially hidden */
+animation: slide-up 0.8s ease-out forwards; /* Apply animation */
+}
+/* Delay animations for each feature-box for a smooth effect */
+.feature-box:nth-child(1) {
+animation-delay: 0.2s;
+}
+.feature-box:nth-child(2) {
+animation-delay: 0.4s;
+}
+.feature-box:nth-child(3) {
+animation-delay: 0.6s;
+}
+.feature-box i {
+    font-size: 40px;
+    color: #ffad00ba;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 150px;
+        height: 150px;
+        padding: 15px;
+    }
+    .feature-section {
+        background: white;
+    }
+}
+.cta-section {
+position: relative;
+text-align: center;
+
+background: url('../images/index_image2.jpg') center/cover no-repeat;
+padding: 80px 20px; /* Added padding to make the content more visible */
+}
+
+.cta-section::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(206, 142, 13, 0.5); /* Added color overlay with transparency */
+}
+
+.cta-section h2,
+.cta-section p,
+.cta-button {
+position: relative;
+z-index: 1; /* Ensures text and button appear above the overlay */
+}
+
+.cta-section h2 {
+font-family: 'Glegoo', serif;
+font-size: 39px;
+margin-bottom: 20px;
+color: #fff; /* White text for better visibility */
+}
+
+.cta-section p {
+font-size: 20px;
+color: #f1f1f1; /* Slightly softer white */
+margin-bottom: 20px;
+}
+
+.cta-button {
+display: inline-block;
+padding: 12px 24px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-size: 18px;
+transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+background-color: #0056b3;
+transform: translateY(-2px);
+}
+
+.footer {
+top: 10px;
+background: linear-gradient(to right, #f2ba0e, #805607e8);
+color: #fcfdfe;
+text-align: center;
+padding: 5px 0;
+position: relative;
+font-size: 20px;
+/* Reduced font size */
+}
+
+.footer img {
+max-width: 60px;
+/* Even smaller size */
+height: auto;
+margin-bottom: 5px;
+/* Minimal space below image */
+}
+
+.footer p {
+margin: 2px 0;
+font-family: 'Turret Road', sans-serif;
+}
+
+.footer a {
+color: #fcfdfe;
+text-decoration: none;
+margin: 0 4px;
+/* Smaller space between links */
+font-weight: 600;
+/* Bold for readability */
+font-size: 10px;
+/* Consistent smaller font size */
+}
+
+.footer a:hover {
+color: #e0e0e0;
+text-decoration: underline;
+/* Underline on hover */
+}
+
+.footer .social-icons {
+margin-top: 5px;
+/* Reduced space above icons */
+}
+
+.footer .social-icons a {
+color: #fcfdfe;
+margin: 0 4px;
+/* Reduced space between icons */
+font-size: 16px;
+/* Smaller icon size */
+transition: color 0.9s;
+}
+
+.footer .social-icons a:hover {
+color: #e0e0e0;
+}
+
+.footer .quick-links {
+margin-top: 5px;
+/* Reduced space above quick links */
+}
+
+.footer .quick-links a {
+color: #fcfdfe;
+margin: 0 4px;
+/* Reduced space between links */
+font-size: 13px;
+/* Smaller font size for links */
+transition: color 0.3s;
+}
+
+.footer .quick-links a:hover {
+color: #e0e0e0;
+text-decoration: underline;
+}
+.about {
+background: white;
+padding: 20px 100px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center; /* Centers content horizontally */
+}
+
+.about h1 {
+font-size: 50px;
+margin-bottom: -20px;/* Adds space between heading and image */
+}
+
+.about img {
+width: 100%;
+height: auto; /* Keeps aspect ratio */
+}
