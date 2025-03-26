@@ -19,11 +19,6 @@ Our team developed the platform using:
 - **Database:** MySQL  
 - **Hosting:** InfiniteFree for global access  
 
-## ⚡ Challenges We Ran Into  
-- Ensuring smooth CRUD operations on tasks.  
-- Implementing a robust login and authentication system.  
-- Deploying the system globally for wider accessibility.  
-
 ## 💡 Overcoming the Challenges  
 - We structured our backend efficiently to handle user requests seamlessly.  
 - Used MySQL to store and retrieve task data securely.  
@@ -38,12 +33,6 @@ Our team developed the platform using:
 - Improved our **backend development skills** in PHP.  
 - Gained experience in **database management** using MySQL.  
 - Understood the **challenges of deploying** a full-stack application.  
-
-## 🔜 What's Next for the Task Management System?  
-- Enhancing UI/UX for a **better user experience**.  
-- Adding features like **task reminders and notifications**.  
-- Introducing a **collaboration feature** for team-based task management.  
-- Improving **security measures** for user data protection.  
 
 ## 🌐 How to Run It  
 ### **Local Server**  
